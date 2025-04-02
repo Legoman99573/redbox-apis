@@ -3,7 +3,7 @@ import fs from "fs/promises";
 import forge from "node-forge";
 import path from "path";
 import { HashService } from "./HashService";
-import { logger } from "redbox-apis/logger";
+import { logger } from "@redbox-apis/logger";
 import { findRoot, generateCertificateId } from "./utils";
 
 export interface GeneratedDeviceCertificate {
