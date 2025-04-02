@@ -10,9 +10,9 @@ importers:
 
   packages/adserver:
     dependencies:
-      '@redbox-apis/common':
+      '@redbox-apis/logger':
         specifier: workspace:*
-        version: link:../common
+        version: link:../logger
       celebrate:
         specifier: ^15.0.3
         version: 15.0.3
@@ -81,6 +81,9 @@ importers:
 
   packages/common:
     dependencies:
+      '@redbox-apis/logger':
+        specifier: workspace:^
+        version: link:../logger
       '@redbox-apis/db':
         specifier: workspace:^
         version: link:../db
@@ -109,12 +112,12 @@ importers:
 
   packages/dataservice:
     dependencies:
-      '@redbox-apis/common':
-        specifier: workspace:*
-        version: link:../common
       '@redbox-apis/db':
         specifier: workspace:*
         version: link:../db
+      '@redbox-apis/logger':
+        specifier: workspace:*
+        version: link:../logger
       celebrate:
         specifier: ^15.0.3
         version: 15.0.3
@@ -155,6 +158,9 @@ importers:
       '@redbox-apis/common':
         specifier: workspace:*
         version: link:../common
+      '@redbox-apis/logger':
+        specifier: workspace:*
+        version: link:../logger
       winston:
         specifier: ^3.17.0
         version: 3.17.0
@@ -183,6 +189,9 @@ importers:
       '@redbox-apis/db':
         specifier: workspace:*
         version: link:../db
+      '@redbox-apis/logger':
+        specifier: workspace:*
+        version: link:../logger
       celebrate:
         specifier: ^15.0.3
         version: 15.0.3
@@ -220,9 +229,9 @@ importers:
 
   packages/kioskinventory:
     dependencies:
-      '@redbox-apis/common':
+      '@redbox-apis/logger':
         specifier: workspace:*
-        version: link:../common
+        version: link:../logger
       celebrate:
         specifier: ^15.0.3
         version: 15.0.3
@@ -255,14 +264,39 @@ importers:
         specifier: ^5.6.3
         version: 5.6.3
 
+  packages/logger:
+    dependencies:
+      express:
+        specifier: ^4.21.1
+        version: 4.21.1
+      node-forge:
+        specifier: ^1.3.1
+        version: 1.3.1
+      winston:
+        specifier: ^3.17.0
+        version: 3.17.0
+    devDependencies:
+      '@types/express':
+        specifier: ^5.0.0
+        version: 5.0.0
+      '@types/node-forge':
+        specifier: ^1.3.11
+        version: 1.3.11
+      rimraf:
+        specifier: ^6.0.1
+        version: 6.0.1
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+
   packages/proxyservice:
     dependencies:
-      '@redbox-apis/common':
-        specifier: workspace:*
-        version: link:../common
       '@redbox-apis/db':
         specifier: workspace:*
         version: link:../db
+      '@redbox-apis/logger':
+        specifier: workspace:*
+        version: link:../logger
       celebrate:
         specifier: ^15.0.3
         version: 15.0.3
@@ -297,9 +331,9 @@ importers:
 
   packages/reels:
     dependencies:
-      '@redbox-apis/common':
+      '@redbox-apis/logger':
         specifier: workspace:*
-        version: link:../common
+        version: link:../logger
       celebrate:
         specifier: ^15.0.3
         version: 15.0.3
@@ -334,9 +368,9 @@ importers:
 
   packages/transactionservice:
     dependencies:
-      '@redbox-apis/common':
+      '@redbox-apis/logger':
         specifier: workspace:*
-        version: link:../common
+        version: link:../logger
       celebrate:
         specifier: ^15.0.3
         version: 15.0.3

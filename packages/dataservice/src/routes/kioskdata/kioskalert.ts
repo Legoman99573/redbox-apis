@@ -1,4 +1,4 @@
-import { logger } from "@redbox-apis/common";
+import { logger } from "@redbox-apis/logger";
 import { celebrate, Segments } from "celebrate";
 import { Request, Response } from "express";
 import { KioskAlertRequest } from "../../interfaces";

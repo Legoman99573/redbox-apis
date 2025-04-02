@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-import { logger } from "@redbox-apis/common";
+import { logger } from "@redbox-apis/logger";
 
 export let connected = false;
 export const prisma: PrismaClient = new PrismaClient();

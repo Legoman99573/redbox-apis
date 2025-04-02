@@ -1,4 +1,5 @@
-import { EncryptionService, logger } from "@redbox-apis/common";
+import { EncryptionService } from "@redbox-apis/common";
+import { logger } from "@redbox-apis/logger";
 import { getPrisma } from "@redbox-apis/db";
 import { celebrate, Joi, Segments } from "celebrate";
 import { Request, Response } from "express";
